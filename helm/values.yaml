@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: nginxinc/nginx-unprivileged
   tag: stable
   pullPolicy: IfNotPresent
 
@@ -17,7 +17,7 @@ secret:
   adminToken: "changeme"
 
 service:
-  port: 80
+  port: 8080
 
 # Annotation used by the agent to find the source repo
 sourceRepo: "Babas10/demo-todo"
