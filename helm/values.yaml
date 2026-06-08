@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
+
+# Injected into the HTML via ConfigMap
+config:
+  appTitle: "My Todo List"
+  accentColor: "#6366f1"
+  maxTodos: 10
+
+# Set to false to simulate a missing-secret scenario
+secret:
+  create: true
+  adminToken: "changeme"
+
+service:
+  port: 80
+
+# Annotation used by the agent to find the source repo
+sourceRepo: "Babas10/demo-todo"

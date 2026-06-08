@@ -1,0 +1,6 @@
+apiVersion: v2
+name: demo-todo
+description: Demo todo app for AI agent repair scenarios
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
