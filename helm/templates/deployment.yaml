@@ -33,15 +33,7 @@ spec:
             - name: html
               mountPath: /usr/share/nginx/html/index.html
               subPath: index.html
-            - name: nginx-cache
-              mountPath: /var/cache/nginx
-            - name: nginx-run
-              mountPath: /var/run
       volumes:
         - name: html
           configMap:
             name: {{ .Release.Name }}-config
-        - name: nginx-cache
-          emptyDir: {}
-        - name: nginx-run
-          emptyDir: {}
