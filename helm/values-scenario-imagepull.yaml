@@ -1,5 +1,5 @@
 # Scenario: ImagePullBackOff
 # Overrides the image tag to a non-existent value.
-# The agent detects ImagePullBackOff and patches the deployment back to nginx:stable.
+# The agent detects ImagePullBackOff and patches the deployment back to ubi9/nginx-124:latest.
 image:
   tag: "broken-99.9.9"

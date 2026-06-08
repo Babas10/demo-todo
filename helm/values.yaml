@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: nginxinc/nginx-unprivileged
-  tag: stable
+  repository: registry.access.redhat.com/ubi9/nginx-124
+  tag: latest
   pullPolicy: IfNotPresent
 
 # Injected into the HTML via ConfigMap
